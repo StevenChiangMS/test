@@ -3,6 +3,7 @@
   --font-color: #2c3e50;
   --font-action-color: #42b983;
   --app-bg-color: #5E86C1;
+  --bg-color: #eee;
 }
 
 * {
@@ -11,7 +12,7 @@
   box-sizing: border-box;
   color: var(--font-color);
   body {
-  background-color: "#eee";
+  background-color: var(--bg-color);
   }
 }
 
