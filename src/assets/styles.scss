@@ -1,0 +1,100 @@
+
+:root {
+  --font-color: #2c3e50;
+  --font-action-color: #42b983;
+  --app-bg-color: #5E86C1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--font-color);
+  body {
+  background-color: "#eee";
+  }
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: var(--font-color);
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  
+// home
+  .home {
+    margin: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    height: 100%;
+    background-color: var(--app-bg-color);
+    .mainValue {
+      margin: 20px 0;
+      width: 100%;
+    }
+    .api {
+
+      input:not([type="radio"]) {
+      width: 100%;
+
+      }
+      select {
+      width: 100%;
+      }
+    }
+  }
+
+  .inputType {
+
+    button {
+      width: 50px;
+      padding: 5px;
+      border-radius: 5px;
+      margin: 1px;
+      cursor: pointer;
+      background-color: var(--font-action-color);
+      border: 0px;
+    }
+
+    button:focus {
+      border: 1px solid #000;
+    }
+  }
+// 
+
+// api 
+
+  .api {
+    height: 100%;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--app-bg-color);
+    
+    ul {
+      margin-top: 30px;
+      list-style: none;
+
+      li {
+        width: 100%;
+        text-align: start;
+      }
+    }
+  }
+//
+}
+
+nav {
+  a {
+    font-weight: 900;
+    color: var(--font-color);
+
+    &.router-link-exact-active {
+      color: var(--font-action-color);
+    }
+  }
+}
