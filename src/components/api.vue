@@ -1,8 +1,8 @@
 <template>
-  <div class="api"  v-if="loading">
+  <div class="apiData"  v-if="loading">
     Api 載入中
   </div>
-  <div class="api" v-else>
+  <div class="apiData" v-else>
     <h1>Api page</h1>
       <ul v-for="item in data" :value="item">
         <li>

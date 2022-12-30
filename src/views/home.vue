@@ -33,6 +33,9 @@
 
 <script>
 import inputType from "@/components/inputType.vue";
+import global from "@/components/Global.vue";
+const bgColor = global.bgColor;
+const fontColor = global.fontColor;
 
 export default {
   name: "home",
@@ -47,6 +50,10 @@ export default {
       isRadioType: false,
       isSelectType: false,
     }
+  },
+  beforeCreate() {
+    document.querySelector('body').style = "background-color:" + bgColor;
+    document.querySelector('#app').style = "color:" + fontColor;
   },
   methods: {
     changeInput(e) {

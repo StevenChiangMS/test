@@ -1,8 +1,8 @@
 <template>
   <div class="inputType">
-    <button @click="changeInput(1)">text</button>
-    <button @click="changeInput(2)">radio</button>
-    <button @click="changeInput(3)">select</button>
+    <button class="inputButton"  @click="changeInput(1)">text</button>
+    <button class="inputButton" @click="changeInput(2)">radio</button>
+    <button class="inputButton" @click="changeInput(3)">select</button>
   </div>
 </template>
 

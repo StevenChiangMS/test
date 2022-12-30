@@ -1,8 +1,12 @@
 
 <script>
-const bgc = "#eee";
+const bgColor = "#ddd";
+const fontColor = "#000";
+
+
 
 export default {
-  bgc,
+  bgColor,
+  fontColor,
 }
 </script>
